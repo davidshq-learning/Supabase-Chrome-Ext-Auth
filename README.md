@@ -7,5 +7,8 @@ This is a fork of RustyZone's Supabase Auth Chrome Extension. This is a working 
 Rusty created a [YouTube tutorial explaining the original Supabase Auth extension](https://www.youtube.com/watch?v=SP7eM_nXgJ4&t=169s) you may want to watch.
 
 # Instructions
-Change your Supabase details in bg-supa.js and manifest.json to fit your Supabase API details.
+1. Create a `manifest.json` file similar to the included `manifest_ex.json`.
+    - Update the URL in `"content_security_policy"` to your Supabase project URL.
+2. Create a `supa_config.json` file similar to the included `supa_config_ex.json`.
+    - Update the `SUPABASE_URL` and `SUPABASE_KEY` element values to match those of your Supabase project URL and API key.
 

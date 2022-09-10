@@ -1,0 +1,6 @@
+- 9/10/22 - 0.02 - [davidshq](https://github.com/davidshq/) forks [rustyzone's Supabase-Chrome-Ext-Auth](https://github.com/rustyzone/Supabase-Chrome-Ext-Auth)
+    - Move Supabase API key and URL into `supa_config.json`.
+    - Load JSON from `supa_config.json` into `bg-supa.js` so that API key and URL can be injected.
+    - Provide example file: `supa_config_ex.json`, also `manifest_ex.json` as it also requires Supabase URL.
+    - Remove `supa_config.json` and `manifest.json` from repository and add to `.gitignore` to avoid accidental commits.
+    - Expand README and add CHANGELOG.

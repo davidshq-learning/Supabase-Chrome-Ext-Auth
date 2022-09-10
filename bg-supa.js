@@ -1,13 +1,14 @@
 
+const configUrl = chrome.runtime.getURL('supa_config.json');
 
+const config = fetch(configUrl)
+.then((response) => response.json());
 
-const SUPABASE_KEY = 'YOUR.API.KEYS';
-const SUPABASE_URL = "https://YOUR-PROJECT.supabase.co"
-const { createClient } = supabase;
-supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-
- console.log('supabase?', supabase);
-
+config.then((result) => {
+  const { createClient } = supabase;
+  supabase = createClient(result.SUPABASE_URL, result.SUPABASE_KEY);
+  console.log('supabase?', supabase);
+});
 
 
 const handleMessage = async function(msg, sender, response){
