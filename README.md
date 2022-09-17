@@ -12,3 +12,5 @@ Rusty created a [YouTube tutorial explaining the original Supabase Auth extensio
 2. Create a `supa_config.json` file similar to the included `supa_config_ex.json`.
     - Update the `SUPABASE_URL` and `SUPABASE_KEY` element values to match those of your Supabase project URL and API key.
 
+# Dependencies
+This extension uses the [JavaScript Supabase client](https://supabase.com/docs/reference/javascript/), currently [version 1.35.6](https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.6/dist/umd/supabase.js.
